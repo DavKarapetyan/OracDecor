@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="./libs/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Orac Decor</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-brown nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://global.oracdecor.ru/static/version1689076900/frontend/OracDecor/global/ru_RU/images/logo.svg"
+            class="img-fluid"
+            alt=""
+            width="85"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">вдохновение</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Установка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Где купить</a>
+            </li>
+            <li class="nav-item dropdown product__items">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Товары
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Карнизы</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Плинтусы</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Молдинги</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Скрытое освещение</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >3D стеновые покрытия</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Декоративные элементы</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Клеи и инструменты</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item my-auto mr-lg-3 search-parent">
+          <div class="search__container">
+            <input
+              placeholder="что ты ищешь?"
+              required=""
+              class="search__input"
+              name="text"
+              type="text"
+            />
+            <div class="icon">
+              <svg
+                viewBox="0 0 512 512"
+                class="ionicon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Search</title>
+                <path
+                  stroke-width="32"
+                  stroke-miterlimit="10"
+                  stroke="currentColor"
+                  fill="none"
+                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                ></path>
+                <path
+                  d="M338.29 338.29L448 448"
+                  stroke-width="32"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="none"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="custom__tabs">
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Карнизы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_cornice-mouldings.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Плинтусы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_skirting.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Молдинги</p>
+        <img
+          src="https://oracdecor.ru/media/catalog/category/icn_panel-mouldings.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Скрытое освещение</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_indirect-lighting.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">3D стеновые покрытия</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_wall_covering.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Декоративные элементы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_deco_elements.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Клеи и инструменты</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/V4_DECOFIX_bigger_1.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+    </div>
+    <div class="container mt-2">
+      <div class="row g-0">
+        <div class="col-9">
+          <div class="row g-0">
+            <div class="col-4">
+              <img
+                src="https://oracdecor.ru/media/assets/d/3/8/0/d380ad74093545b287b08310fd9adcf77492478e_3dplayground23_slope_1_63c186b186897.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-8">
+              <img
+                src="https://oracdecor.ru/media/assets/0/0/1/9/00198a9d14e1c41afd1b854283cac6bea0742f70_3dplayground23_loop_2_63eb698ba74eb.jpeg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="row g-0">
+            <div class="col-8">
+              <img
+                src="https://global.oracdecor.ru/static/version1689076900/frontend/OracDecor/global/ru_RU/images/give-walls-personality.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-4">
+              <form class="where__buy__form">
+                <div
+                  class="container align-items-center justify-content-center"
+                >
+                  <p class="form__text">ГДЕ КУПИТЬ</p>
+                  <input
+                    class="form__input mt-2"
+                    placeholder="Введите местоположение"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <img
+            src="https://oracdecor.ru/media/assets/7/0/b/d/70bd5c06c9c6ccdbd01d3a81c761819ef39c9d6e_3dplayground23_bar_mix_1_63c5154974026.jpeg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row g-0">
+        <div class="col-12 col-md-3">
+          <div class="row g-0">
+            <div class="col-md-12 col-6">
+              <img
+                src="https://oracdecor.ru/media/assets/a/e/3/b/ae3bf229ab685bb889289ade8c796cbf8e66a434_3dplayground23_track_5_63d2b026ad5a8.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-12 col-6">
+              <div class="cta">
+                <h1>ВСЕЛЕННАЯ 3D стен</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="https://oracdecor.ru/media/assets/a/0/f/7/a0f7fc880f7d411a9e8e4a880a1be7882f904f4f_3dplayground23_bar_mix_9_63d39142009b9.png"
+            class="cta__image"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="row g-0">
+            <div class="col-md-12 col-6">
+              <img
+                src="https://oracdecor.ru/media/assets/7/f/e/3/7fe32288f9ecdfb2c7fa06b156ad84e523d75e61_3dplayground23_track_7_63d153a17ca32.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-12 col-6 p-4">
+              <h6>ДОБРО ПОЖАЛОВАТЬ В МИР 3D СТЕН</h6>
+              <p class="small__text">
+                В мире Orac Decor стенам подвластно все: они вдохновляют,
+                удивляют, восхищают и... наполняют энергией. Приготовьтесь ко
+                встрече с декором, который завораживает экспрессивной красотой.
+                Мы создали не просто стеновые покрытия - мы создали магию,
+                меняющую пространство.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row g-0">
+        <div class="col-12 col-md-3">
+          <div class="row g-0">
+            <div class="col-md-12 col-6">
+              <img
+                src="https://oracdecor.ru/media/assets/b/b/7/c/bb7c9b83ec2b22fcd18ac658b8ee77f070cd01c8_bookwalls_621b92ba3e4df.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-12 col-6">
+              <div class="cta">
+                <h1>КУПИТЬ КНИГУ</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <img
+            src="https://oracdecor.ru/media/assets/a/f/8/7/af8777cc086edfef0f262b4ca46563a5c1b62c11_book5_622108a4c3922.jpg"
+            class="cta__image"
+            alt=""
+          />
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="row g-0">
+            <div class="col-md-12 col-6">
+              <img
+                src="https://oracdecor.ru/media/assets/9/b/1/e/9b1e4cbbf414da38fbc7bb2ff7464cd702a96c79_bookwalls3_621b958e427f1.jpg"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-md-12 col-6 p-4">
+              <h6>ПРЕМИАЛЬНЫЙ ПУТЕВОДИТЕЛЬ ПО ДЕКОРУ СТЕН</h6>
+              <p class="small__text">
+                256 страниц фотографий и рекомендаций для дизайнеров / 50
+                вдохновляющих проектов со всего мира / интервью и советы
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row g-0">
+        <div class="col-lg-6 col-12">
+          <img
+            src="https://oracdecor.ru/media/assets/c/0/e/2/c0e2f4ff514216f0b247b0a41be1ea54a49a8350_3dplayground23_ripple_11_63d12623d032b.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-3 col-6">
+          <div class="cta">
+            <h1>ЗАКАЗАТЬ КАТАЛОГ</h1>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6">
+          <img
+            src="https://oracdecor.ru/media/assets/c/0/e/2/c0e2f4ff514216f0b247b0a41be1ea54a49a8350_3dplayground23_ripple_11_63d12623d032b.jpg"
+            class="bed__image"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-2">
+      <div class="row g-0">
+        <div class="col-lg-6">
+          <img
+            src="https://oracdecor.ru/media/assets/7/2/3/8/72388cd1310e9745aa284360a7a69fd3ff3b3651_guytaillieu_63ad91080cf11.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-6">
+          <img
+            src="https://oracdecor.ru/media/assets/6/5/2/4/65247e049c8f988856fbaa05cdbf13c60608b4bd_guy1970_63ad91fdb6173.png"
+            class="img-fluid"
+            alt=""
+          />
+          <div class="orac__body">
+            <div class="orac__container">
+              <a class="orac__head__text">
+                Orac скорбит о потере своего основателя Ги Тайо
+              </a>
+              <div class="streamer-content">
+                <p>
+                  На Рождество 2022 года в возрасте 76 лет скончался основатель
+                  ORAC Ги Тайо. В 1970 году вместе со своей женой Мартиной
+                  Лауэрс (†) он основал в Остенде научно-исследовательскую
+                  компанию, сокращенно Orac. В свои 24 года он увидел
+                  возможность воплотить научные достижения в области новых
+                  материалов, главным образом полиуретана, в продукты, открывшие
+                  новые пути выхода на рынок. Его решимость и четкая мечта были
+                  не только сильным бизнес-планом, но и были главными движущими
+                  силами, которые побудили его совершить прыжок в неизвестность.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="heading__text">
+        ДЕКОРАТИВНАЯ ЛЕПНИНА ИЗ ПОЛИУРЕТАНА И ДЮРОПОЛИМЕРА ORAC DECOR
+      </h1>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__head">
+        <span class="footer__tab">
+          <i class="bx bxs-droplet"></i> НЕ БОЯТСЯ ВОДЫ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bx-brush-alt"></i> ЛЕГКО ОКРАШИВАЮТСЯ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bxs-wrench"></i> ЛЕГКО МОНТИРУЮТСЯ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bxs-star"></i> ВЫДАЮЩЕЕСЯ КАЧЕСТВО ИЗДЕЛИЙ
+        </span>
+        <span class="footer__tab"> <i class="bx bx-wind"></i> ГИБКИЕ </span>
+      </div>
+      <div class="footer__body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="list__tabs">
+                <li><a href="#">Контакты | FAQ</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Информация о продукте</a></li>
+                <li><a href="#">Калькулятор клея</a></li>
+                <li><a href="#">Таблица Flex радиусов</a></li>
+                <li><a href="#">Профессиональная зона</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <form class="newsletter__form">
+                <label for="newsletter">Subscribe to our newsletter</label>
+                <input
+                  type="text"
+                  id="newsletter"
+                  class="newsletter__input mt-2"
+                  placeholder="NAME@SERVER.COM"
+                />
+                <div class="actions__toolbar">
+                  <button class="newsletter__btn mt-2">Подписаться</button>
+                  <div class="social__media">
+                    <a href="#"><i class="bx bxl-pinterest"></i></a>
+                    <a href="#"><i class="bx bxl-vimeo"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                    <a href="#"><i class="bx bxl-vk"></i></a>
+                    <a href="#"><i class="bx bxl-telegram"></i></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list__tabs">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Вакансии </a></li>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Общие условия продаж</a></li>
+                <li><a href="#">Условия по оплате и доставке</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2019-2023 Orac Decor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./libs/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

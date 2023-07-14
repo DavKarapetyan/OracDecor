@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/helvetica-neue-55"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="./libs/bootstrap-5.3.0-dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+      integrity="sha512-ELV+xyi8IhEApPS/pSj66+Jiw+sOT1Mqkzlh8ExXihe4zfqbWkxPRi8wptXIO9g73FSlhmquFlUOuMSoXz5IRw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Orac Decor</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-brown nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="https://global.oracdecor.ru/static/version1689076900/frontend/OracDecor/global/ru_RU/images/logo.svg"
+            class="img-fluid"
+            alt=""
+            width="85"
+            height="40"
+          />
+        </a>
+        <button
+          class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">вдохновение</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Установка</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Где купить</a>
+            </li>
+            <li class="nav-item dropdown product__items">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Товары
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Карнизы</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Плинтусы</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html">Молдинги</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Скрытое освещение</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >3D стеновые покрытия</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Декоративные элементы</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="catalog.html"
+                    >Клеи и инструменты</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="nav-item my-auto mr-lg-3 search-parent">
+          <div class="search__container">
+            <input
+              placeholder="что ты ищешь?"
+              required=""
+              class="search__input"
+              name="text"
+              type="text"
+            />
+            <div class="icon">
+              <svg
+                viewBox="0 0 512 512"
+                class="ionicon"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Search</title>
+                <path
+                  stroke-width="32"
+                  stroke-miterlimit="10"
+                  stroke="currentColor"
+                  fill="none"
+                  d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                ></path>
+                <path
+                  d="M338.29 338.29L448 448"
+                  stroke-width="32"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke="currentColor"
+                  fill="none"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="custom__tabs">
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Карнизы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_cornice-mouldings.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Плинтусы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_skirting.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Молдинги</p>
+        <img
+          src="https://oracdecor.ru/media/catalog/category/icn_panel-mouldings.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Скрытое освещение</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_indirect-lighting.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">3D стеновые покрытия</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_wall_covering.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Декоративные элементы</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/icn_deco_elements.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+      <a class="tab" href="catalog.html">
+        <p class="tab__text">Клеи и инструменты</p>
+        <img
+          src="https://global.oracdecor.ru/media/catalog/category/V4_DECOFIX_bigger_1.png"
+          class="tab__image"
+          alt=""
+        />
+      </a>
+    </div>
+
+    <div class="container mt-3">
+      <ul class="nav nav-underline mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <h5>Фильтры</h5>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-application-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-application"
+            type="button"
+            role="tab"
+            aria-controls="pills-application"
+            aria-selected="true"
+          >
+            Применение
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-style-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-style"
+            type="button"
+            role="tab"
+            aria-controls="pills-style"
+            aria-selected="false"
+          >
+            Стиль
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-materialType-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-materialType"
+            type="button"
+            role="tab"
+            aria-controls="pills-materialType"
+            aria-selected="false"
+          >
+            Тип материала
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-height-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-height"
+            type="button"
+            role="tab"
+            aria-controls="pills-height"
+            aria-selected="false"
+          >
+            Высота
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-width-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-width"
+            type="button"
+            role="tab"
+            aria-controls="pills-width"
+            aria-selected="false"
+          >
+            Ширина
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav__link"
+            id="pills-price-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-price"
+            type="button"
+            role="tab"
+            aria-controls="pills-price"
+            aria-selected="false"
+          >
+            Цена
+          </button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div
+          class="tab-pane fade"
+          id="pills-application"
+          role="tabpanel"
+          aria-labelledby="pills-application-tab"
+          tabindex="0"
+        >
+          <div class="image__tabs">
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//1/_/1_1.png"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Стеновые панели
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//1/-/1-2.png"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  3D стеновые панели
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//w/1/w105_cut.png"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  3D элементы декора
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-style"
+          role="tabpanel"
+          aria-labelledby="pills-style-tab"
+          tabindex="0"
+        >
+          <div class="image__tabs">
+            <div>
+              <img
+                src="https://oracdecor.ru/media/amasty/shopby/option_images/slider/V3_DECO_ELEMENTS_-231_1.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Современный
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://oracdecor.ru/media/amasty/shopby/option_images/slider/style_classic_web.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Классический
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://oracdecor.ru/media/amasty/shopby/option_images/slider/style_ornamental_web.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Орнаментальный
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-materialType"
+          role="tabpanel"
+          aria-labelledby="pills-materialType-tab"
+          tabindex="0"
+        >
+          <div class="image__tabs">
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//o/r/orac_decor_book_p15_6.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Purotouch®
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//m/a/material_flex_web.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Flex
+                </label>
+              </div>
+            </div>
+            <div>
+              <img
+                src="https://global.oracdecor.ru/media/attribute/swatch//o/r/orac_12-2017_40367_sx173_-_d340_-_dx174-2300_-_px175__1.jpg"
+                class="application__tab__image"
+                alt=""
+              />
+              <div class="form-check">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Duropolymer®
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-height"
+          role="tabpanel"
+          aria-labelledby="pills-height-tab"
+          tabindex="0"
+        >
+          <div class="slider-box">
+            <div id="height-range" class="slider"></div>
+            <input
+              type="text"
+              id="min-height"
+              class="slider__range"
+              value="25.0"
+              readonly
+            />
+            <input
+              type="text"
+              id="max-height"
+              class="slider__range"
+              value="100.0"
+              readonly
+            />
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-width"
+          role="tabpanel"
+          aria-labelledby="pills-width-tab"
+          tabindex="0"
+        >
+          <div class="slider-box">
+            <div id="width-range" class="slider"></div>
+            <input
+              type="text"
+              id="min-width"
+              class="slider__range"
+              value="1.0"
+              readonly
+            />
+            <input
+              type="text"
+              id="max-width"
+              class="slider__range"
+              value="4.0"
+              readonly
+            />
+          </div>
+        </div>
+        <div
+          class="tab-pane fade"
+          id="pills-price"
+          role="tabpanel"
+          aria-labelledby="pills-price-tab"
+          tabindex="0"
+        >
+          <div class="slider-box">
+            <div id="price-range" class="slider"></div>
+            <input
+              type="text"
+              id="min-price"
+              class="slider__range"
+              value="1274"
+              readonly
+            />
+            <input
+              type="text"
+              id="max-price"
+              class="slider__range"
+              value="10846"
+              readonly
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <h1 class="text-center mt-2">ДЕКОРАТИВНЫЕ ПАНЕЛИ ДЛЯ СТЕН</h1>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/1/w117_decorative_element-w117_decorative_element-image_1-w117_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+                href="productPage.html"
+              />
+              <h6>W117 SLOPE</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/1/w119_decorative_element-w119_decorative_element-image_1-w119_90%C2%B0_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <h6>W119 BAR MIX</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/2/w212_decorative_element-w212_decorative_element-image_1-w212_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <h6>W212 VALLEY LOOP</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/s/x/sx207_decorative_element-sx207_decorative_element-image_1-sx207_90%C2%B0_wallpanel_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <h6>SX207 QUARE</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/x/wx204_decorative_element-wx204_decorative_element-image_1-wx204_big_90%C2%B0_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <span class="badge text-bg-warning">Select</span>
+              <h6>WX204 RIPPLE</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/x/wx204-2600_decorative_element-wx204-2600_decorative_element-image_1-wx204_big_90%C2%B0_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <h6>WX204-2600 RIPPLE</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/x/wx205_decorative_element-wx205_decorative_element-image_1-wx205_small_90%C2%B0_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <span class="badge text-bg-warning">Modern</span>
+              <span class="badge text-bg-warning">Select</span>
+              <h6>WX205 TRACK</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-3">
+          <a href="productPage.html" class="text-decoration-none text-black">
+            <div class="product__card">
+              <img
+                src="https://oracdecor.ru/media/catalog/product/cache/f832bc0d999e82782e91ec88d23723eb/w/x/wx205-2600_decorative_element-wx205-2600_decorative_element-image_1-wx205_small_90%C2%B0_decorative_element.png"
+                class="img-fluid product__image"
+                alt=""
+              />
+              <h6>WX205-2600 TRACK</h6>
+              <p class="card__text">д 100 x в 100 x ш 2,3 см</p>
+              <p class="card__text">Purotouch®</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <p class="main__text">
+        В процессе работы над дизайном дома приходится решать множество
+        вопросов, и главный из них — как создать уютный и удобный интерьер,
+        желательно неповторимый и впечатляющий. С тех пор, как человек научился
+        возводить четыре стены под покровом крыши для обустройства своего
+        жилища, эта задача мучает и вдохновляет строителей на настоящие подвиги,
+        креативные прорывы. Как и произошло в Древнем Египте, когда наряду с
+        росписью и барельефами, стены стали украшать гладкими или резными
+        декоративными панелями из дерева. Залы дворцов фараона и местной знати
+        заиграли уникальными интерьерами, а дизайнеры получили в свои руки
+        новый, открывающий безграничные возможности инструмент. Эстафету древних
+        египтян подхватили архитекторы Средневековья. Для роскошного
+        декорирования стен во Франции во времена Генриха II и в дальнейшем
+        использовали буазери, деревянные панели, покрытые позолотой. Смотрелось
+        необычно и шикарно, но стоило недешево. С позолоченными буазери
+        соседствовали окрашенные. Их тонировали в единый цвет или в несколько
+        разных, часто на контрасте. Оригинальный прием декорирования, уводящий
+        от стандартного оформления однотипных планировок, стал общедоступным с
+        появлением прочных полимерных материалов. Наша компания Orac Decor
+        разработала специальный материал для создания интерьерного декора —
+        полиуретан Purotouch®. Он стоек к агрессивным воздействиям, из-за
+        повышенной твердости допускает мельчайшую и точную проработку всех
+        элементов рельефа. Эскиз орнамента любой сложности может быть перенесен
+        на поверхность полиуретановых деталей без потери замысла. Уникальный по
+        свойствам полимер мы используем для выпуска эксклюзивных по виду, но
+        простых в монтаже декоративных стеновых панелей. Над оформлением моделей
+        работает дизайнер с мировым именем Орио Тонини.
+      </p>
+      <h3>Бесшовные панели под покраску</h3>
+      <p class="main__text">
+        Наша коллекция стеновых панелей отличается разнообразием форм и
+        возможностями применения. Мы подготовили гладкие модели для оформления
+        традиционных классических интерьеров: квадратные и прямоугольные с
+        выделенной однорядной или многорядной рамкой по кромке. Ими отделывается
+        вся стена или ее часть. Рельефные панно, украшенные растительным или
+        геометрическим орнаментом, сложным узором, созданы для атмосферной
+        отделки убранства в концепциях барокко, рококо, лофта, модерна,
+        конструктивизма, ампира и классики. Преимущество стеновых панелей Orac
+        Decor® в том, что они стыкуются на поверхности без швов. Благодаря этому
+        массив изделий выглядит единым композиционным 3D-полотном, и на нем
+        отсутствуют некрасивые полосы в местах смыкания. Причем, создать такой
+        шикарный и модный объемный стеновой декор под силу практически каждому.
+        Необходимо следовать подробной инструкции и использовать рекомендованные
+        материалы. Легкие панно фиксируются монтажным клеем Orac Decor. Панели
+        уже загрунтованы, они тонируются в заданную гамму водными, акриловыми
+        красителями.
+      </p>
+      <h6>Модный и практичный декор</h6>
+      <p class="main__text">
+        С помощью наших панелей можно «рисовать» на стенах рельефные
+        произведения, полностью преобразующие внутреннюю обстановку. Такой
+        объемный декор сам «устремляется» к зрителю и усиливает ощущение
+        многомерности пространства, наполняя его воздухом и насыщая
+        фактурностью. Чтобы избежать излишней вычурности, нагрузки деталями, в
+        помещении, особенно скромном по габаритам, полностью отделывать панелями
+        стоит лишь одну поверхность. Учитывают параметры комнаты и при подборе
+        узора на декоре. Вертикально ориентированный орнамент на стене визуально
+        «приподнимает» потолок. Горизонтальный рисунок — «растягивает» комнату в
+        ширину. Очень украшает интерьер дозированное включение стеновых покрытий
+        в отделку. Так, например, одна часть оклеивается обоями или
+        окрашивается, другая — делается объемной. Когда гладкая поверхность
+        сменяется рельефной, контраст текстур смотрится стильно и выигрышно.
+        Панелями можно создавать живописные зоны прямо на монотонных
+        поверхностях, отделывать ими архитектурные элементы, дверные проемы,
+        порталы каминов. Масштабность стенового декора, его художественную
+        ценность, эффектность подчеркивают встраиванием в него точечных и
+        линейных источников света. Панели для стен Orac Decor® выглядят
+        презентабельно, и со временем они не теряют привлекательности.
+        Полиуретан стоек к износу, влаге, инертен к запахам, шумам, к нему
+        равнодушны вредные паразиты и домашние питомцы. Вот почему нашу
+        продукцию можно купить для оформления не только жилых комнат, но и
+        кухонь, ванных комнат, офисных помещений, фасадов зданий. Применение
+        стеновых панно существенно облегчает чистовую отделку. Поверхность под
+        ними не должна быть доведена до идеального состояния, безупречно
+        выровнена и оштукатурена. Напротив, панели обладают улучшенными
+        маскировочными свойствами. Полиуретановые покрытия также повышают
+        шумоизоляционные и теплоизоляционные свойства стен.
+      </p>
+      <h3>Купить декоративные панели</h3>
+      <p class="main__text">
+        Приглашаем вас ознакомиться с каталогом нашего интернет-магазина и
+        подобрать подходящую по дизайну и свойствам модель. Для вашего удобства
+        каждая позиция представлена на фото и сопровождается информативным
+        описанием. Любой понравившийся товар можно заказать с доставкой по
+        Москве, Московской области, территории РФ. Сроки поставки зависят от
+        объемов партии, наличия готовых изделий на складе. Мы предлагаем купить
+        прошедшие сертификацию по российским и европейским стандартам
+        декоративные стеновые панели по цене, приближенной к себестоимости. Если
+        возникают затруднения в выборе, вы хотите узнать больше о продукции Orac
+        Decor®, позвоните нам или свяжитесь через сайт. Ждем вас.
+      </p>
+    </div>
+
+    <footer class="footer">
+      <div class="footer__head">
+        <span class="footer__tab">
+          <i class="bx bxs-droplet"></i> НЕ БОЯТСЯ ВОДЫ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bx-brush-alt"></i> ЛЕГКО ОКРАШИВАЮТСЯ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bxs-wrench"></i> ЛЕГКО МОНТИРУЮТСЯ
+        </span>
+        <span class="footer__tab">
+          <i class="bx bxs-star"></i> ВЫДАЮЩЕЕСЯ КАЧЕСТВО ИЗДЕЛИЙ
+        </span>
+        <span class="footer__tab"> <i class="bx bx-wind"></i> ГИБКИЕ </span>
+      </div>
+      <div class="footer__body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4">
+              <ul class="list__tabs">
+                <li><a href="#">Контакты | FAQ</a></li>
+                <li><a href="#">Где купить</a></li>
+                <li><a href="#">Информация о продукте</a></li>
+                <li><a href="#">Калькулятор клея</a></li>
+                <li><a href="#">Таблица Flex радиусов</a></li>
+                <li><a href="#">Профессиональная зона</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4">
+              <form class="newsletter__form">
+                <label for="newsletter">Subscribe to our newsletter</label>
+                <input
+                  type="text"
+                  id="newsletter"
+                  class="newsletter__input mt-2"
+                  placeholder="NAME@SERVER.COM"
+                />
+                <div class="actions__toolbar">
+                  <button class="newsletter__btn mt-2">Подписаться</button>
+                  <div class="social__media">
+                    <a href="#"><i class="bx bxl-pinterest"></i></a>
+                    <a href="#"><i class="bx bxl-vimeo"></i></a>
+                    <a href="#"><i class="bx bxl-youtube"></i></a>
+                    <a href="#"><i class="bx bxl-vk"></i></a>
+                    <a href="#"><i class="bx bxl-telegram"></i></a>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-4">
+              <ul class="list__tabs">
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Вакансии </a></li>
+                <li><a href="#">Войти</a></li>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Общие условия продаж</a></li>
+                <li><a href="#">Условия по оплате и доставке</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>Copyright © 2019-2023 Orac Decor. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"
+      integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./libs/bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
