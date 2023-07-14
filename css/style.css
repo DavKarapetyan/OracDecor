@@ -564,3 +564,17 @@
   background-color: #fff;
   border: 1px solid #f1f3f4;
 }
+
+.gallery__image {
+  object-fit: cover;
+  max-height: 234.5px;
+  max-width: 314px;
+  width: 100%;
+}
+@media (max-width: 797px) {
+  .gallery__image {
+    margin-top: 5px;
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
