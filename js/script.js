@@ -78,3 +78,6 @@ $(".slider__nav").slick({
   centerMode: true,
   focusOnSelect: true,
 });
+$(document).ready(function () {
+  $("#exampleModal").modal("show");
+});
