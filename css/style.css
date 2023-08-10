@@ -692,3 +692,7 @@
     margin-right: 0;
   }
 }
+.remove__btn {
+  color: black;
+  font-size: 24px;
+}
