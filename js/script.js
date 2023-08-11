@@ -81,3 +81,8 @@ $(".slider__nav").slick({
 $(document).ready(function () {
   $("#exampleModal").modal("show");
 });
+
+$(".banner__slider").slick({
+  dots: true,
+  arrows: true,
+});
